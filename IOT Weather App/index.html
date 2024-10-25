@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Monitoring</title>
+    <!-- For-Mobile-Apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <script>
+      addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+      });
+
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script>
+    <!-- //For-Mobile-Apps -->
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- Style -->
+  </head>
+
+  <body>
+    <h1 class="hcolor">REAL TIME WEATHER MONITORING</h1>
+    <div class="container">
+      <div class="city">
+        <select id="source">
+          <option value="1">Hyderabad</option>
+        </select>
+      </div>
+
+      <div class="content">
+        <div class="place">
+          <div class="txt"></div>
+          <div class="dmy"></div>
+          <div class="timebox">
+            Last Updated:
+            <span id="time"> </span>
+          </div>
+        </div>
+
+        <a class="temp" href="chart.html?source=1" target="_blank">
+          <table>
+            <tr>
+              <td>
+                <p>Temperature:</p>
+              </td>
+              <td>
+                <p><span class="variable">31</span>°C</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Humidity:</p>
+              </td>
+              <td>
+                <p><span class="variable">43</span>%</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Pressure:</p>
+              </td>
+              <td>
+                <p><span class="variable">2</span>hPa</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Air Quality:</p>
+              </td>
+              <td>
+                <p><span class="variable">90</span></p>
+              </td>
+            </tr>
+          </table>
+        </a>
+      </div>
+    </div>
+  </body>
+  <!-- JavaScript -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <!-- JavaScript -->
+</html>
